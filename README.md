@@ -1,4 +1,4 @@
-**<h2align="center📅 Calculadora com while utilizando os quatro operadores aritméticos.</h2>**
+**<h2 align="center">📅 Calculadora com while utilizando os quatro operadores aritméticos</h2>**
 
 > Projeto em Python.  
 
@@ -22,15 +22,19 @@
 **💻 Como usar:** 
 ```
 1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/api-google
-
 ```
 SAÍDA ESPERADA:
 
 Digite o primeiro número: 20
+
 Digite o segundo número: 10
+
 Digite o operador (+, -, *, /): +
+
 20.0 + 10.0 = 30.0.
+
 Você deseja sair? [s]im: sim
+
 Saindo da calculadora.
 
 **🛠 Tecnologias:**
