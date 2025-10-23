@@ -9,7 +9,7 @@
 
 ---
 
-**🛠️ Foco do projeto:** 
+**💡 Foco do projeto:** 
 
 **- Entender o funcionamento do while + try/except** 
 
@@ -19,7 +19,7 @@
   
 ---
 
-**🖱️ Como usar:** 
+**🛠️ Como usar:** 
 ```
 1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/api-google
 
