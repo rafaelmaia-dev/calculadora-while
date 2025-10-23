@@ -1,4 +1,4 @@
-**<h2 align="center📅 Calculadora com while utilizando os quatro operadores aritméticos.</h2>**
+**<h2align="center📅 Calculadora com while utilizando os quatro operadores aritméticos.</h2>**
 
 > Projeto em Python.  
 
