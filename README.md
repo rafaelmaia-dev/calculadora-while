@@ -19,7 +19,7 @@
   
 ---
 
-**💻 Como usar:** 
+**🖱️ Como usar:** 
 ```
 1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/api-google
 
@@ -39,7 +39,7 @@ Você deseja sair? [s]im: sim
 Saindo da calculadora.
 ```
 
-**🛠 Tecnologias:**
+**🖥️ Tecnologias:**
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" />
 </p>
