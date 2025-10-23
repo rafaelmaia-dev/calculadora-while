@@ -22,7 +22,7 @@
 **💻 Como usar:** 
 ```
 1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/api-google
-```
+
 SAÍDA ESPERADA:
 
 Digite o primeiro número: 20
@@ -36,6 +36,7 @@ Digite o operador (+, -, *, /): +
 Você deseja sair? [s]im: sim
 
 Saindo da calculadora.
+```
 
 **🛠 Tecnologias:**
 <p>
