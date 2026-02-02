@@ -21,7 +21,7 @@
 
 **🛠️ Como usar:** 
 ```
-1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/api-google
+1. Clone este repositório: git clone https://github.com/rafaelmaia-dev/calculadora-while
 
 
 SAÍDA ESPERADA:
