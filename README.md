@@ -1,6 +1,6 @@
-# 🧮 Calculadora com While
+# 🧮 **Calculadora com While**
 
-### *Utilizando os quatro operadores aritméticos*
+### **Utilizando os quatro operadores aritméticos**
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
