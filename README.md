@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contribuições-Bem--vindas-brightgreen?style=for-the-badge)
 
-*Uma calculadora simples e robusta desenvolvida em Python com foco em estruturas de repetição e tratamento de erros*
+Uma calculadora simples e robusta desenvolvida em Python com foco em estruturas de repetição e tratamento de erros
 
 [📋 Funcionalidades](#-funcionalidades) •
 [🚀 Instalação](#-instalação) •
