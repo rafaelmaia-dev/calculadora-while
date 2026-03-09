@@ -2,31 +2,28 @@
 
 while True:
     try:
-        primeiro_numero = input('Digite o primeiro número: ')
-        segundo_numero = input('Digite o segundo número: ')
+        primeiro_numero = float(input('Digite o primeiro número: '))
+        segundo_numero = float(input('Digite o segundo número: '))
         operador = input('Digite o operador (+, -, *, /): ').strip()  # .strip() remove espaços extras
 
-        num_1_float = float(primeiro_numero)
-        num_2_float = float(segundo_numero)
-
         if operador == '+':
-            resultado = num_1_float + num_2_float
-            print(f'{num_1_float} + {num_2_float} = {resultado}.')
+            resultado = primeiro_numero + segundo_numero
+            print(f'{primeiro_numero} + {segundo_numero} = {resultado}.' )
     
         elif operador == '-':
-            resultado = num_1_float - num_2_float
-            print(f'{num_1_float} - {num_2_float} = {resultado}.')
+            resultado = primeiro_numero - segundo_numero
+            print(f'{primeiro_numero} - {segundo_numero} = {resultado}.')
     
         elif operador == '/':
-            if num_2_float == 0:
+            if segundo_numero == 0:
                 print('Divisão com o segundo número sendo zero não é permitido.')
             else:
-                resultado = num_1_float / num_2_float
-                print(f'{num_1_float} / {num_2_float} = {resultado}.')
+                resultado = primeiro_numero / segundo_numero
+                print(f'{primeiro_numero} / {segundo_numero} = {resultado}.')
 
         elif operador == '*':
-            resultado = num_1_float * num_2_float
-            print(f'{num_1_float} * {num_2_float} = {resultado}.')
+            resultado = primeiro_numero * segundo_numero
+            print(f'{primeiro_numero} * {segundo_numero} = {resultado}.')
 
         else:
             print('Operador inválido! Use +, -, / ou *.')
