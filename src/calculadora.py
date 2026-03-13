@@ -1,15 +1,23 @@
-def criar_soma(n1):
-    def soma2(n2):
-        return n1 + n2
-    return soma2
+from operacoes import operacao_aritmetica
 
-numero1 = criar_soma(int(input('Digite o primeiro número: ')))
-resultado = numero1(int(input('Digite o segundo número: ')))
-print(resultado)
+def main():
+    while True:
+        try:
+            n1 = float(input('Digite um número: '))
+            n2 = float(input("Digite outro número: "))
+            operador = input("Digite um dos operadores ao lado (+, -, *, /): ").strip()
 
+            resultado = operacao_aritmetica(n1, n2, operador)
+            print(f'{n1} {operador} {n2} = {resultado} ')
 
+        except ValueError as e:
+            print(f'Erro: {e} ')
 
+        sair = input("Deseja sair? [s]im: ").strip().lower()
+        if sair in ('s', 'sim'):
+            print('Saindo da calculadora. ')
+            break
 
+main()
 
         
-
