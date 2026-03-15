@@ -24,20 +24,19 @@ function calcular() {
     return;
   }
 
-  var sim = { '+': '+', '-': '−', '*': '×', '/': '÷' };
-  var valor;
-  if (operadorAtual === '+') valor = n1 + n2;
-  else if (operadorAtual === '-') valor = n1 - n2;
-  else if (operadorAtual === '*') valor = n1 * n2;
-  else if (operadorAtual === '/') {
-    if (n2 === 0) {
-      el.textContent = 'Erro: Divisão por zero não permitida.';
-      el.className = 'erro';
-      return;
-    }
-    valor = n1 / n2;
+  if (typeof operacao_aritmetica_python !== 'function') {
+    el.textContent = 'Aguardando Python... (recarregue se demorar).';
+    el.className = 'erro';
+    return;
   }
 
-  el.textContent = 'Resultado: ' + n1 + ' ' + sim[operadorAtual] + ' ' + n2 + ' = ' + valor;
-  el.className = '';
+  try {
+    var valor = operacao_aritmetica_python(n1, n2, operadorAtual);
+    var sim = { '+': '+', '-': '−', '*': '×', '/': '÷' };
+    el.textContent = 'Resultado: ' + n1 + ' ' + sim[operadorAtual] + ' ' + n2 + ' = ' + valor;
+    el.className = '';
+  } catch (err) {
+    el.textContent = 'Erro: ' + (err.message || err);
+    el.className = 'erro';
+  }
 }
