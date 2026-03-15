@@ -141,6 +141,43 @@ input:focus {
   border: 1px solid rgba(248, 113, 113, 0.3);
 }
 
+#historico {
+  margin-top: 20px;
+  text-align: left;
+}
+.historico-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+.botao-limpar {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+}
+#lista-historico {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.historico-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #e2e8f0;
+  font-size: 14px;
+}
+.historico-hora {
+  margin-left: 0.25rem;
+  opacity: 0.85;
+}
+
 @keyframes fundoAnimado {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
