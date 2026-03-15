@@ -3,32 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Soma</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script language="javascript">
-     //var nome
-     //nome = window.prompt("Digite o seu nome:");
-     //alert ("Bem-Vindo a minha calculadora!!");
-		 //alert ("Bem-Vindo a minha calculadora " + nome + "!!"); 
-		</script>
-
-
-
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculadora">
-    <h1>Calculadora</h1>
+  <main class="container">
+    <section class="calculadora">
+      <h1>Calculadora</h1>
+      <p class="descricao">Utilize os quatro operadores aritméticos</p>
 
-    <input type="number" id="numero1" placeholder="Digite o primeiro número: ">
-    <input type="number" id="numero2" placeholder="Digite o segundo número: ">
-    <input type="number" id="operador" placeholder="Digite o operador: "
+      <div class="display">
+        <input type="number" id="numero1" placeholder="Primeiro número" step="any">
+        <input type="number" id="numero2" placeholder="Segundo número" step="any">
+      </div>
 
-    <button id="confirmar" onclick="operacao_aritmetica()">confirmar</button>
+      <div class="botoes-operacao">
+        <button type="button" onclick="selecionarOperador(this, '+')">+</button>
+        <button type="button" onclick="selecionarOperador(this, '-')">−</button>
+        <button type="button" onclick="selecionarOperador(this, '*')">×</button>
+        <button type="button" onclick="selecionarOperador(this, '/')">÷</button>
+      </div>
 
-    <div id="resultado">Resultado:</div>
-  </div>
+      <p id="operador-selecionado" class="operador-info">Selecione um operador acima</p>
 
-  <script src="operacoes.py"></script>
+      <button type="button" class="botao-principal" onclick="calcular()">Calcular</button>
+
+      <div id="resultado">Resultado:</div>
+    </section>
+  </main>
+
+  <script>
+    var operadorAtual = null;
+
+    function selecionarOperador(btn, op) {
+      operadorAtual = op;
+      var labels = { '+': 'Adição (+)', '-': 'Subtração (−)', '*': 'Multiplicação (×)', '/': 'Divisão (÷)' };
+      document.getElementById('operador-selecionado').textContent = 'Operador: ' + labels[op];
+      document.querySelectorAll('.botoes-operacao button').forEach(function(b) { b.classList.remove('ativo'); });
+      btn.classList.add('ativo');
+    }
+
+    function calcular() {
+      var n1 = parseFloat(document.getElementById('numero1').value);
+      var n2 = parseFloat(document.getElementById('numero2').value);
+      var resultado = document.getElementById('resultado');
+
+      if (isNaN(n1) || isNaN(n2)) {
+        resultado.textContent = 'Erro: Por favor, digite dois números válidos.';
+        resultado.className = 'erro';
+        return;
+      }
+      if (operadorAtual === null) {
+        resultado.textContent = 'Erro: Selecione um operador antes de calcular.';
+        resultado.className = 'erro';
+        return;
+      }
+
+      var valor;
+      if (operadorAtual === '+') valor = n1 + n2;
+      else if (operadorAtual === '-') valor = n1 - n2;
+      else if (operadorAtual === '*') valor = n1 * n2;
+      else if (operadorAtual === '/') {
+        if (n2 === 0) {
+          resultado.textContent = 'Erro: Divisão por zero não é permitida.';
+          resultado.className = 'erro';
+          return;
+        }
+        valor = n1 / n2;
+      }
+
+      var simbolos = { '+': '+', '-': '−', '*': '×', '/': '÷' };
+      resultado.textContent = 'Resultado: ' + n1 + ' ' + simbolos[operadorAtual] + ' ' + n2 + ' = ' + valor;
+      resultado.className = '';
+    }
+  </script>
 </body>
 </html>
