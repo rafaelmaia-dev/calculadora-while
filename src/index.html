@@ -36,34 +36,19 @@
     var pyodideReady = false;
     var operacao_aritmetica_python = null;
 
-    function operacoes_py_code() {
-      return `
-def operacao_aritmetica(n1, n2, operador):
-    if operador == '+':
-        return n1 + n2
-    elif operador == '-':
-        return n1 - n2
-    elif operador == '*':
-        return n1 * n2
-    elif operador == '/':
-        if n2 == 0:
-            raise ValueError('Divisão por zero não é permitida.')
-        return n1 / n2
-    else:
-        raise ValueError('Operador inválido. Use +, -, *, ou /.')
-`;
-    }
+window.addEventListener('load', async function() {
+  const pyodide = await loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.24.1/full/' });
 
-    window.addEventListener('load', function() {
-      loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.24.1/full/' }).then(function(pyodide) {
-        pyodide.runPython(operacoes_py_code());
-        operacao_aritmetica_python = pyodide.globals.get('operacao_aritmetica');
-        pyodideReady = true;
-      }).catch(function(err) {
-        console.error('Pyodide load error:', err);
-      });
-    });
-  </script>
-  <script src="script.js"></script>
-</body>
-</html>
+  // Carrega o operacoes.py diretamente do arquivo, sem duplicar código
+  const response = await fetch('./operacoes.py');
+  const code = await response.text();
+
+  await pyodide.runPythonAsync(code);
+
+  operacao_aritmetica_python = pyodide.globals.get('operacao_aritmetica');
+  pyodideReady = true;
+  
+});
+
+
+    
