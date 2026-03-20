@@ -8,7 +8,7 @@ def operacao_aritmetica(n1: float, n2: float, operador: str) -> float:
         return n1 * n2
     elif operador == '/':
         if n2 == 0:
-            raise ValueError(f'Divisão por zero não é permitida. ')
+            raise ValueError('Divisão por zero não é permitida. ')
         return n1 / n2
     else:
         raise ValueError(f'Operador inválido: "{operador}". Use +, -, *, ou /. ')
