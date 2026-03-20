@@ -1,4 +1,4 @@
-def operacao_aritmetica(n1, n2, operador):
+def operacao_aritmetica(n1: float, n2: float, operador: str) -> float:
     
     if operador == '+':
         return n1 + n2
