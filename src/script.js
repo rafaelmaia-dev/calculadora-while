@@ -1,4 +1,4 @@
-var operadorAtual = null;
+let operadorAtual = null;
 
 function selecionarOperador(btn, op) {
   operadorAtual = op;
