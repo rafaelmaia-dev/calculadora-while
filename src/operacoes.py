@@ -15,7 +15,7 @@ def operacao_aritmetica(n1: float, n2: float, operador: str) -> float:
         ValueError: Para operador inválido ou divisão por zero
 
     """
-    
+       
     if operador == '+':
         return n1 + n2
     elif operador == '-':
