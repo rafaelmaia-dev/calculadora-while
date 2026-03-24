@@ -24,7 +24,7 @@ body {
 
 .calculadora {
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   padding: 28px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
@@ -49,8 +49,15 @@ h1 {
 .display {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 16px;
+  text-align: left;
+}
+
+.display label {
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 input {
@@ -141,10 +148,17 @@ input:focus {
   border: 1px solid rgba(248, 113, 113, 0.3);
 }
 
+#resultado.sucesso {
+  background: rgba(34, 197, 94, 0.18);
+  color: #dcfce7;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+}
+
 #historico {
   margin-top: 20px;
   text-align: left;
 }
+
 .historico-header {
   display: flex;
   justify-content: space-between;
@@ -153,29 +167,34 @@ input:focus {
   color: #e2e8f0;
   font-size: 14px;
 }
+
 .botao-limpar {
   padding: 6px 12px;
   font-size: 12px;
   border-radius: 8px;
   border: none;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   cursor: pointer;
 }
+
+.botao-limpar:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 #lista-historico {
   list-style: none;
   margin: 0;
   padding: 0;
+  max-height: 180px;
+  overflow-y: auto;
 }
+
 .historico-item {
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #e2e8f0;
   font-size: 14px;
-}
-.historico-hora {
-  margin-left: 0.25rem;
-  opacity: 0.85;
 }
 
 @keyframes fundoAnimado {
@@ -188,6 +207,7 @@ input:focus {
   .calculadora {
     padding: 22px;
   }
+
   h1 {
     font-size: 1.5rem;
   }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculadora</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <main class="container">
@@ -13,57 +13,36 @@
       <p class="descricao">Utilize os quatro operadores aritméticos</p>
 
       <div class="display">
-        <input type="number" id="numero1" placeholder="Primeiro número" step="any">
-        <input type="number" id="numero2" placeholder="Segundo número" step="any">
+        <label for="numero1">Primeiro número</label>
+        <input type="number" id="numero1" placeholder="Primeiro número" step="any" />
+
+        <label for="numero2">Segundo número</label>
+        <input type="number" id="numero2" placeholder="Segundo número" step="any" />
       </div>
 
       <div class="botoes-operacao">
-        <button type="button" onclick="selecionarOperador(this, '+')">+</button>
-        <button type="button" onclick="selecionarOperador(this, '-')">−</button>
-        <button type="button" onclick="selecionarOperador(this, '*')">×</button>
-        <button type="button" onclick="selecionarOperador(this, '/')">÷</button>
+        <button type="button" data-operador="+">+</button>
+        <button type="button" data-operador="-">−</button>
+        <button type="button" data-operador="*">×</button>
+        <button type="button" data-operador="/">÷</button>
       </div>
 
       <p id="operador-selecionado" class="operador-info">Selecione um operador acima</p>
-      <button type="button" class="botao-principal" onclick="calcular()">Calcular</button>
-      <div id="resultado">Resultado:</div>
+
+      <button type="button" id="btn-calcular" class="botao-principal">Calcular</button>
+
+      <div id="resultado" aria-live="polite">Resultado:</div>
+
+      <section id="historico">
+        <div class="historico-header">
+          <strong>Histórico</strong>
+          <button type="button" id="limpar-historico" class="botao-limpar">Limpar</button>
+        </div>
+        <ul id="lista-historico"></ul>
+      </section>
     </section>
   </main>
 
-  <!-- Mesma lógica de operacoes.py rodando no navegador (Pyodide) -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
-  <script>
-    var pyodideReady = false;
-    var operacao_aritmetica_python = null;
-
-    function operacoes_py_code() {
-      return `
-def operacao_aritmetica(n1, n2, operador):
-    if operador == '+':
-        return n1 + n2
-    elif operador == '-':
-        return n1 - n2
-    elif operador == '*':
-        return n1 * n2
-    elif operador == '/':
-        if n2 == 0:
-            raise ValueError('Divisão por zero não é permitida.')
-        return n1 / n2
-    else:
-        raise ValueError('Operador inválido. Use +, -, *, ou /.')
-`;
-    }
-
-    window.addEventListener('load', function() {
-      loadPyodide({ indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.24.1/full/' }).then(function(pyodide) {
-        pyodide.runPython(operacoes_py_code());
-        operacao_aritmetica_python = pyodide.globals.get('operacao_aritmetica');
-        pyodideReady = true;
-      }).catch(function(err) {
-        console.error('Pyodide load error:', err);
-      });
-    });
-  </script>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
