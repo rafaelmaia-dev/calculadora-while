@@ -1,5 +1,5 @@
 # .github/workflows/tests.yml
-name: testes python
+name: testes_operacoes
 on: [push, pull_request]
 jobs:
   test:
