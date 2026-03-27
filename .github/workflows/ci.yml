@@ -25,4 +25,6 @@ jobs:
           pip install pytest
 
       - name: Rodar testes
-        run: pytest
+        env:
+          PYTHONPATH: .
+        run: PYTHONPATH=src/python pytest -q

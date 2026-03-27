@@ -1,5 +1,5 @@
 import pytest
-from operacoes import operacao_aritmetica
+from python.operacoes import operacao_aritmetica
 
 def teste_soma():
     assert operacao_aritmetica(1, 1, '+') == 2.0
