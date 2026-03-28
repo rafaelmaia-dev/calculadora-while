@@ -3,7 +3,7 @@ import math
 from python.operacoes import operacao_aritmetica
 
 def teste_soma():
-    assert math.isclose(operacao_aritmetica(1, 1,), 2)
+    assert math.isclose(operacao_aritmetica(1, 1, '+'), 2)
 
 def teste_sub():
     assert operacao_aritmetica(3, 2, '-') == 1
