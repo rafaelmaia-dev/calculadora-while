@@ -100,7 +100,7 @@ function calcular() {
     salvarHistorico();
     renderizarHistorico();
   } catch (erro_) {
-    resultado.textContent = `Erro: ${erro.message}`;
+    resultado.textContent = `Erro: ${erro_.message}`;
     resultado.className = "erro";
   }
 }
