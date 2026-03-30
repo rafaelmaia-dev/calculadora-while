@@ -122,7 +122,7 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   background: linear-gradient(90deg, #22c55e, #16a34a);
-  color: #ffffff;
+  color: #052e16;
   transition: transform 0.15s ease, filter 0.15s ease;
 }
 
