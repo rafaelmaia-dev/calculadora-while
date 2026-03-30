@@ -77,7 +77,7 @@ function calcular() {
   const n1 = Number.parseFloat(numero1.value);
   const n2 = Number.parseFloat(numero2.value);
 
-  if (isNaN(n1) || isNaN(n2)) {
+  if (Number.isNaN(n1) || Number.isNaN(n2)) {
     resultado.textContent = "Erro: digite dois números válidos.";
     resultado.className = "erro";
     return;
