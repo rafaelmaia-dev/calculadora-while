@@ -74,8 +74,8 @@ function renderizarHistorico() {
 }
 
 function calcular() {
-  const n1 = parseFloat(numero1.value);
-  const n2 = parseFloat(numero2.value);
+  const n1 = Number.parseFloat(numero1.value);
+  const n2 = Number.parseFloat(numero2.value);
 
   if (isNaN(n1) || isNaN(n2)) {
     resultado.textContent = "Erro: digite dois números válidos.";
