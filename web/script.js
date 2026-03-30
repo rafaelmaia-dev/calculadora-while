@@ -99,8 +99,8 @@ function calcular() {
     historico.push(texto);
     salvarHistorico();
     renderizarHistorico();
-  } catch (erro_) {
-    resultado.textContent = `Erro: ${erro_.message}`;
+  } catch (error_) {
+    resultado.textContent = `Erro: ${error_.message}`;
     resultado.className = "erro";
   }
 }
