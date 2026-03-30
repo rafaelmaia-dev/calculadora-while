@@ -99,7 +99,7 @@ function calcular() {
     historico.push(texto);
     salvarHistorico();
     renderizarHistorico();
-  } catch (erro) {
+  } catch (erro_) {
     resultado.textContent = `Erro: ${erro.message}`;
     resultado.className = "erro";
   }
