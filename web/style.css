@@ -102,7 +102,7 @@ input:focus {
 
 .botoes-operacao button.ativo {
   background: #38bdf8;
-  color: #ffffff;
+  color: #0c4a6e;
   box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
 }
 
