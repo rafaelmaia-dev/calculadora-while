@@ -1,6 +1,6 @@
 import pytest
 import math
-from python.operacoes import operacao_aritmetica
+from operacoes import operacao_aritmetica
 
 def teste_soma():
     assert math.isclose(operacao_aritmetica(1.0, 1.0, '+'), 2.0) 
