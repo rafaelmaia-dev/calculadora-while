@@ -43,7 +43,8 @@ jobs:
         # Flags de cobertura já definidas no pytest.ini — não duplicar aqui
         run: pytest
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v5
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v6
+        with:
+          args: >
+            -Dsonar.organization=rafaelmaia-dev
