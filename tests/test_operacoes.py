@@ -13,8 +13,11 @@ def teste_multi():
 
 def teste_div_zero():
     with pytest.raises(ValueError, match = "Divisão por zero"):
-        (operacao_aritmetica(10.0, 0, '/'))
+        operacao_aritmetica(10.0, 0, '/')
 
-def teste_operador_valido():
+def test_operador_valido():
     with pytest.raises(ValueError):
         operacao_aritmetica(1, 1, '%')
+
+
+
