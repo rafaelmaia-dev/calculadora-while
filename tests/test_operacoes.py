@@ -19,5 +19,3 @@ def test_operador_valido():
     with pytest.raises(ValueError):
         operacao_aritmetica(1, 1, '%')
 
-
-
