@@ -172,12 +172,13 @@ input:focus {
 .botao-limpar {
   padding: 6px 12px;
   font-size: 12px;
-  border-radius: 8px;
   border: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: yellow;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
   cursor: pointer;
 }
+
 
 .botao-limpar:hover {
   background: rgba(255, 255, 255, 0.3);
