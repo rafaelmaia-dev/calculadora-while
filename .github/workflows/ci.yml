@@ -40,8 +40,7 @@ jobs:
         run: python --version
 
       - name: Rodar testes
-        # Flags de cobertura já definidas no pytest.ini — não duplicar aqui
-        run: pytest
+        run: pytest --cov=src --cov-report=xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@299e4b793aaa83bf2aba7c9c14bedbb485688ec4
