@@ -199,13 +199,13 @@ Desenvolvido por **Rafael Maia**.
 - GitHub: [rafaelmaia-dev](https://github.com/rafaelmaia-dev)
 - LinkedIn: [Rafael Maia](https://www.linkedin.com/in/SEU-USUARIO/)
 
-
+<BR>
 
 ## 📄 Licença
 
 Este projeto está sob a licença **MIT**.
 
-
+<BR>
 
 ## 💬 Observação final
 
