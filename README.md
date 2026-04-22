@@ -200,13 +200,12 @@ Desenvolvido por **Rafael Maia**.
 - LinkedIn: [Rafael Maia](https://www.linkedin.com/in/SEU-USUARIO/)
 
 
----
 
 ## 📄 Licença
 
 Este projeto está sob a licença **MIT**.
 
----
+
 
 ## 💬 Observação final
 
