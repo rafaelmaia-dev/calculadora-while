@@ -196,11 +196,9 @@ Se quiser melhorar o projeto:
 
 Desenvolvido por **Rafael Maia**.
 
-Se quiser, você pode adicionar aqui seus links:
+- GitHub: [rafaelmaia-dev](https://github.com/rafaelmaia-dev)
+- LinkedIn: [Rafael Maia](https://www.linkedin.com/in/SEU-USUARIO/)
 
-```md
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafael-maia-508554232/?skipRedirect=true)
-[![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=flat&logo=github&logoColor=white)](https://github.com/rafaelmaia-dev?tab=repositories)
 ```
 
 ---
