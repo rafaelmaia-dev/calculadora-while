@@ -190,7 +190,6 @@ Se quiser melhorar o projeto:
 3. faça suas alterações
 4. abra um pull request
 
----
 
 ## 👨‍💻 Autor
 
