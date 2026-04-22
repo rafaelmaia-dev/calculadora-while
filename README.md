@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
 O **Calculadora While** é um projeto simples e funcional desenvolvido para praticar fundamentos importantes de programação, como:
 
@@ -27,7 +27,7 @@ A aplicação possui uma versão principal em **Python**, executada no terminal,
 
 ---
 
-## ✨ Destaques
+## Destaques
 
 - ✅ Operações aritméticas básicas: adição, subtração, multiplicação e divisão  
 - ✅ Loop contínuo no terminal usando `while`  
@@ -79,7 +79,7 @@ calculadora-while/
 
 ---
 
-## 🚀 Como executar o projeto
+## Como executar o projeto
 
 ### 1) Clonar o repositório
 
@@ -95,7 +95,7 @@ cd calculadora-while
 
 ---
 
-## ▶️ Executando a versão Python
+## Executando a versão Python
 
 Acesse a pasta `src` e execute o arquivo principal:
 
@@ -199,7 +199,6 @@ Desenvolvido por **Rafael Maia**.
 - GitHub: [rafaelmaia-dev](https://github.com/rafaelmaia-dev)
 - LinkedIn: [Rafael Maia](https://www.linkedin.com/in/SEU-USUARIO/)
 
-```
 
 ---
 
