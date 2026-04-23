@@ -69,12 +69,20 @@ Além de resolver um problema simples, ele demonstra boas práticas como:
 ```bash
 calculadora-while/
 ├── src/
-│   ├── calculadora.py   # execução principal no terminal
-│   ├── operacoes.py     # regras de negócio e operações aritméticas
-│   ├── index.html       # interface web
-│   ├── script.js        # comportamento da interface
-│   └── style.css        # estilização da aplicação
-└── README.md
+│   ├── python/
+│   │   ├── __init__.py       # Inicializador do pacote Python
+│   │   ├── calculadora.py    # Execução principal no terminal
+│   │   └── operacoes.py      # Regras de negócio e operações aritméticas
+│   └── web/
+│       ├── index.html        # Interface web
+│       ├── script.js         # Comportamento da interface
+│       └── style.css         # Estilização da aplicação
+├── tests/
+│   └── test_operacoes.py     # Testes automatizados das operações
+├── LICENSE                   # Licença do projeto
+├── pytest.ini                # Configurações do framework de testes
+├── README.md                 # Documentação do projeto
+└── sonar-project.properties  # Configurações de análise de código
 ```
 
 ---
