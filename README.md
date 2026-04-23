@@ -127,7 +127,7 @@ Deseja sair? [s]im:
 
 ## 🌐 Executando a versão web
 
-Abra o arquivo `src/index.html` diretamente no navegador.
+Abra o arquivo `web/index.html` diretamente no navegador.
 
 Se preferir, você também pode usar uma extensão como **Live Server** no VS Code para rodar localmente com mais praticidade.
 
