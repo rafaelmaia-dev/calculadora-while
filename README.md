@@ -1,10 +1,12 @@
-# Calculadora While
+```markdown
+# 🧮 Calculadora While
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python badge" />
-  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript badge" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML badge" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS badge" />
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
 </p>
 
 <p align="center">
@@ -13,207 +15,111 @@
 
 ---
 
-## Sobre o projeto
+## 📖 Sobre o projeto
 
-O **Calculadora While** é um projeto simples e funcional desenvolvido para praticar fundamentos importantes de programação, como:
+O **Calculadora While** é um projeto funcional desenvolvido para praticar fundamentos essenciais, como estruturas de repetição, tratamento de erros e a separação de responsabilidades entre lógica (Back-end) e visual (Front-end).
 
-- estrutura de repetição com `while`
-- entrada e saída de dados
-- tratamento de erros
-- separação de responsabilidades
-- integração entre lógica e interface
-
-A aplicação possui uma versão principal em **Python**, executada no terminal, e uma versão complementar com **HTML, CSS e JavaScript**, oferecendo uma interface mais visual para o usuário.
+A aplicação possui uma versão robusta em **Python** e uma interface moderna em **Web**, aplicando conceitos de *Glassmorphism*.
 
 ---
 
-## Destaques
+## 🚀 Destaques e Funcionalidades
 
-- ✅ Operações aritméticas básicas: adição, subtração, multiplicação e divisão  
-- ✅ Loop contínuo no terminal usando `while`  
-- ✅ Tratamento de **divisão por zero**  
-- ✅ Validação de operador inválido  
-- ✅ Estrutura modular com separação entre execução e regras de negócio  
-- ✅ Interface web com seleção visual de operadores  
-- ✅ Layout moderno com visual em estilo glassmorphism  
-
----
-
-## 🧠 Objetivo
-
-Este projeto foi criado com foco em aprendizado e evolução prática, servindo como exercício para reforçar conceitos essenciais de desenvolvimento.
-
-Além de resolver um problema simples, ele demonstra boas práticas como:
-
-- organização de arquivos
-- reutilização de código
-- clareza na lógica
-- preocupação com a experiência de uso
+- ✅ Operações básicas: Adição, Subtração, Multiplicação e Divisão.
+- ✅ Loop contínuo com estrutura `while`.
+- ✅ Tratamento de **divisão por zero** e entradas inválidas.
+- ✅ Estrutura modular (Lógica separada da execução).
+- ✅ Interface Web responsiva com feedback visual.
+- ✅ **Testes Automatizados** para garantir a integridade dos cálculos.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-### Back-end / lógica
-- **Python**
-
-### Front-end
-- **HTML5**
-- **CSS3**
-- **JavaScript**
+- **Lógica/Back-end:** Python 3.x
+- **Front-end:** HTML5, CSS3 (Custom Properties), JavaScript (ES6+)
+- **QA/Testes:** Pytest
+- **Análise de Qualidade:** SonarCloud
 
 ---
 
 ## 📂 Estrutura do projeto
 
-```bash
+```text
 calculadora-while/
 ├── src/
 │   ├── python/
 │   │   ├── __init__.py       # Inicializador do pacote Python
 │   │   ├── calculadora.py    # Execução principal no terminal
-│   │   └── operacoes.py      # Regras de negócio e operações aritméticas
+│   │   └── operacoes.py      # Regras de negócio e cálculos
 │   └── web/
 │       ├── index.html        # Interface web
 │       ├── script.js         # Comportamento da interface
-│       └── style.css         # Estilização da aplicação
+│       └── style.css         # Estilização (Glassmorphism)
 ├── tests/
-│   └── test_operacoes.py     # Testes automatizados das operações
-├── LICENSE                   # Licença do projeto
-├── pytest.ini                # Configurações do framework de testes
-├── README.md                 # Documentação do projeto
+│   └── test_operacoes.py     # Testes automatizados
+├── LICENSE                   # Licença MIT
+├── pytest.ini                # Configurações do Pytest
+├── README.md                 # Documentação
 └── sonar-project.properties  # Configurações de análise de código
 ```
 
 ---
 
-## Como executar o projeto
+## ⚙️ Como executar o projeto
 
-### 1) Clonar o repositório
-
+### 1) Instalação
 ```bash
-git clone https://github.com/rafaelmaia-dev/calculadora-while.git
-```
+# Clone o repositório
+git clone [https://github.com/rafaelmaia-dev/calculadora-while.git](https://github.com/rafaelmaia-dev/calculadora-while.git)
 
-### 2) Acessar a pasta do projeto
-
-```bash
+# Acesse a pasta
 cd calculadora-while
 ```
 
----
-
-## Executando a versão Python
-
-Acesse a pasta `src` e execute o arquivo principal:
-
+### 2) Executando a Versão Terminal (Python)
 ```bash
 cd src/python
 python calculadora.py
 ```
 
-### Exemplo de uso no terminal
+### 3) Executando a Versão Web
+Basta abrir o arquivo `src/web/index.html` em qualquer navegador ou utilizar a extensão **Live Server** no VS Code.
 
+---
+
+## 🧪 Qualidade e Testes
+
+Este projeto utiliza **Pytest** para garantir que as operações matemáticas funcionem corretamente.
+
+Para rodar os testes, instale o pytest e execute na raiz do projeto:
 ```bash
-Digite um número: 10
-Digite outro número: 2
-Digite um dos operadores ao lado (+, -, *, /): /
-10.0 / 2.0 = 5.0
-
-Deseja sair? [s]im:
+pip install pytest
+pytest
 ```
 
 ---
 
-## 🌐 Executando a versão web
+## 📈 Próximos Passos (Backlog)
 
-Abra o arquivo `web/index.html` diretamente no navegador.
-
-Se preferir, você também pode usar uma extensão como **Live Server** no VS Code para rodar localmente com mais praticidade.
-
----
-
-## 🔎 Funcionalidades
-
-### Versão terminal
-- leitura de dois números
-- escolha do operador matemático
-- cálculo do resultado
-- repetição contínua até o usuário decidir sair
-
-### Versão web
-- campos para os dois números
-- seleção de operador por botões
-- exibição do resultado na tela
-- mensagens de erro para entradas inválidas
+- [x] Testes automatizados das operações básicas.
+- [ ] Histórico de operações realizadas.
+- [ ] Suporte a operações avançadas (porcentagem e potência).
+- [ ] Implementação de Modo Escuro (Dark Mode).
+- [ ] Deploy da versão web (GitHub Pages/Vercel).
 
 ---
-
-## ⚠️ Validações e tratamento de erros
-
-O projeto já contempla algumas validações importantes:
-
-- operador inválido
-- divisão por zero
-- entradas não numéricas na interface web
-- cálculo sem operador selecionado
-
-Esses cuidados tornam a aplicação mais confiável e demonstram atenção à robustez do código, mesmo em um projeto simples.
-
----
-
-## 🎨 Interface
-
-A interface web foi construída com foco em uma apresentação mais moderna, incluindo:
-
-- fundo com gradiente animado
-- card centralizado
-- destaque visual do operador selecionado
-- feedback de erro em tela
-- visual limpo e agradável
-
----
-
-## 📈 Possíveis melhorias
-
-Como próximos passos, este projeto pode evoluir com:
-
-- [ ] histórico de operações
-- [ ] testes automatizados
-- [ ] suporte a porcentagem e potência
-- [ ] modo escuro/claro
-- [ ] responsividade aprimorada
-- [ ] deploy da versão web
-
----
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas.
-
-Se quiser melhorar o projeto:
-
-1. faça um fork do repositório
-2. crie uma branch para sua feature
-3. faça suas alterações
-4. abra um pull request
-
 
 ## 👨‍💻 Autor
 
 Desenvolvido por **Rafael Maia**.
 
-- GitHub: [rafaelmaia-dev](https://github.com/rafaelmaia-dev)
-- LinkedIn: [Rafael Maia](https://www.linkedin.com/in/SEU-USUARIO/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rafaelmaia-dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/Rafael Maia/)
 
-
+---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**.
-
-
-
-## 💬 Observação final
-
-Este repositório representa uma prática importante de fundamentos de programação e também uma base interessante para evolução futura. Mesmo sendo um projeto simples, ele já demonstra conceitos valorizados no mercado, como organização, clareza e tratamento de erros.
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
