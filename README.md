@@ -108,7 +108,7 @@ cd calculadora-while
 Acesse a pasta `src` e execute o arquivo principal:
 
 ```bash
-cd src
+cd src/python
 python calculadora.py
 ```
 
