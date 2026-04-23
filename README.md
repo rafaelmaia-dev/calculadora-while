@@ -1,4 +1,3 @@
-```md
 # Calculadora While
 
 <p align="center">
