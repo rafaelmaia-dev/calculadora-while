@@ -138,6 +138,9 @@ Você pode abrir diretamente o arquivo:
 web/index.html
 ```
 
+<img width="653" height="803" alt="image" src="https://github.com/user-attachments/assets/8b5b4a4d-fe02-47a9-9580-3e9ee785bc17" />
+
+
 Ou subir um servidor local simples:
 
 ```bash
