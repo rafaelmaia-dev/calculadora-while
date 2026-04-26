@@ -175,6 +175,15 @@ pytest --cov=src/python --cov-report=term-missing
 
 ---
 
+## 📝 Instalar dependências 
+
+No terminal execute:
+
+```
+pip install -r requirements.txt
+
+```
+
 ## ⚙️ Integração contínua
 
 O projeto possui uma pipeline configurada com **GitHub Actions** para:
