@@ -10,7 +10,7 @@
 
 ## 📌 Sobre o projeto
 
-O **Calculadora While** é um projeto educacional que implementa uma calculadora simples com os quatro operadores aritméticos básicos:
+Projeto completo de calculadora com CLI e interface web, incluindo testes automatizados, CI/CD e boas práticas de engenharia de software.
 
 - Soma
 - Subtração
