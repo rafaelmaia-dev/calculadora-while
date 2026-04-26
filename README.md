@@ -184,6 +184,8 @@ pip install -r requirements.txt
 
 ```
 
+---
+
 ## ⚙️ Integração contínua
 
 O projeto possui uma pipeline configurada com **GitHub Actions** para:
